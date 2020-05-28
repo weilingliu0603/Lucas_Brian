@@ -1,0 +1,16 @@
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+  <p>&nbsp;</p>
+<p><strong>Enter the month that you want to view :0</strong></p>
+<form action="{{ url_for('MonthlyTrans') }}" method="POST">
+
+    Month&ensp;&ensp; <input name = 'Month' value = "MM">
+<br><br><br>
+	Year&ensp;&ensp; <input name = 'Year' value = "YY">
+<br><br><br>
+    <input type="submit" value = "submit">
+    </form>  
+  

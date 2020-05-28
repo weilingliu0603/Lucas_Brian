@@ -1,0 +1,18 @@
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+  <p>&nbsp;</p>
+<p><strong>Don't change the box if there is nothing to update for that section :0</strong></p>
+<br></br>
+<form action="{{ url_for('Memupdate') }}" method="POST">
+
+    MemberID&ensp;&ensp; <input name = 'MemberID' value = "Enter MemberID">
+<br><br>
+	Email&ensp;&ensp; <input name = 'Updated Email' value = "Enter Email">
+<br><br>
+	ContactNo&ensp;&ensp; <input name = 'Updated ContactNo' value = "Enter ContactNo">
+<br><br>
+    <input type="submit" value = "submit">
+    </form>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+	<head>
+		<title><B>Homepage</B></title>
+	</head>
+	<body>
+	
+	<b>Welcome! Click an icon to add member, add transactions, view transaction, update member information.</p>
+    <table width="840" height="227" border="0">
+      <tr>
+        <td width="214"><a href="{{url_for('AddMem')}}"><img src="{{ url_for('static', filename='../static/AddMem.png') }}" width="199" height="210"/></a></td>
+        <td width="214"><a href="{{url_for('AddTrans')}}"><img src="{{ url_for('static', filename='../static/AddTrans.png') }}" width="199" height="210" /></td>
+        <td width="214"><a href="{{url_for('Trans')}}"><img src="{{ url_for('static', filename='../static/Trans.png') }}" width="199" height="190" /></td>
+        <td width="214"><a href="{{url_for('Update')}}"><img src="{{ url_for('static', filename='../static/Updates.png') }}" width="199" height="210" /></td>
+      </tr>
+    </table>
+	<p>

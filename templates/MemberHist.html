@@ -1,0 +1,32 @@
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+  <p>&nbsp;</p>
+
+<p class="style1"><b> Summary of {{rows[0][2]}} details</p>
+    <br />
+  <table border="1">
+       <tr bgcolor="grey">
+          <td><font color="white"><div align="center"><strong>InvoiceID&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</strong></div></td>
+          <td><font color="white"><div align="center"><strong>Date&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</strong></div></td>
+          <td><font color="white"><div align="center"><strong>Total_amount&ensp;&ensp;&ensp;&ensp;</strong></div></td>
+        </tr>
+      {% for row in rows %}
+ 
+      <tr>
+        <td>{{ row['InvoiceID'] }}</td>
+        <td align="right">{{ row['Date'] }}</td>
+        <td align="right">${{ row['Total_amount'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end #mainContent -->
+    </p>
+  </div>

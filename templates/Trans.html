@@ -1,0 +1,15 @@
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+
+
+<p><strong> Please select one of the 3 transaction histories, (Daily, Monthly, Member)</strong></p>
+<table width="840" height="227" border="0">
+      <tr>
+        <td width="214"><a href="{{url_for('Daily')}}"><img src="{{ url_for('static', filename='../static/Daily.png') }}" width="199" height="210" /></a></td>
+        <td width="214"><a href="{{url_for('Monthly')}}"><img src="{{ url_for('static', filename='../static/Monthly.png') }}" width="199" height="210" /></td>
+        <td width="214"><a href="{{url_for('Member')}}"><img src="{{ url_for('static', filename='../static/MemberHist.png') }}" width="199" height="210" /></td>
+      </tr>
+    </table>

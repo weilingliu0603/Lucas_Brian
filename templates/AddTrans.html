@@ -1,0 +1,37 @@
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='../static/Head.jfif') }}" width="271" height="55" ></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+  <p>&nbsp;</p>
+  <p><strong>If customer is a member, type MemberID, else leave it :0</strong></p>
+
+  <form action="{{ url_for('Transadded') }}" method="POST">
+
+    MemberID&ensp;&ensp; <input name = 'MemberID' value = "00">
+<br><br><br>
+	Name    &ensp;&ensp; <input name = 'Name' value = "Enter Name">
+<br><br><br>
+	Date    &ensp;&ensp; <input name = 'Date' value = "MM/DD/YY">
+<br><br><br>
+	<p><strong>If Customer used service, type '1', else leave it :0</strong></p>
+	Cut(short length)   &ensp;&ensp;<input name = 'Short' value = "0">
+<br><br>
+    Cut(medium length)  &ensp;&ensp;<input name = 'Medium' value = "0">
+<br><br>
+	Cut(long length)    &ensp;&ensp; <input name = 'Long' value = "0">
+<br><br>
+	Colour              &ensp;&ensp; <input name = 'Colour' value = "0">
+<br><br>
+	Highlight(half head)&ensp;&ensp; <input name = 'Half' value = "0">
+<br><br>
+	Highlight(full head)&ensp;&ensp; <input name = 'Full' value = "0">
+<br><br>
+	Perm                &ensp;&ensp; <input name = 'Perm' value = "0">
+<br><br>
+	Rebounding          &ensp;&ensp; <input name = 'Rebounding' value = "0">
+<br><br>
+	Treatment           &ensp;&ensp; <input name = 'Treatment' value = "0">
+<br><br>
+    <input type="submit" value = "submit">
+    </form>
